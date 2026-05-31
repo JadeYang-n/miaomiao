@@ -91,7 +91,7 @@ mqtt_protocol_t* mqtt_protocol_create(void) {
     snprintf(proto->client_id, sizeof(proto->client_id), "%s", proto->device_id);
 
     // Default broker
-    strncpy(proto->broker_host, "192.168.3.34", sizeof(proto->broker_host) - 1);
+    strncpy(proto->broker_host, "192.168.1.100", sizeof(proto->broker_host) - 1);
     proto->broker_port = 1883;
 
     proto->connected = false;
