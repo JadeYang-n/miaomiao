@@ -1,0 +1,22 @@
+server:
+  port: 8090
+
+mqtt:
+  broker: tcp://localhost:1883
+  client-id: gateway-${random.uuid}
+  username: admin
+  password: public
+  keep-alive: 60
+  topics:
+    subscribe: server/+/publish
+    publish: server/%s/subscribe
+
+udp:
+  port: 8888
+
+spring-boot:
+  url: http://localhost:8080
+  audio-endpoint: /api/audio
+
+aes:
+  key: "00112233445566778899aabbccddeeff"

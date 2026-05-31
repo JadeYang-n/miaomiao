@@ -1,0 +1,9 @@
+target/
+*.log
+data/
+*.mv.db
+*.trace.db
+run.log
+live.log
+live_new.log
+spring.log

@@ -1,0 +1,70 @@
+# Dependencies
+node_modules/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# OS
+.DS_Store
+
+# Build output
+target/
+build/
+dist/
+miaomiao-backend/logs/
+miaomiao-backend/*.log
+miaomiao-backend/spring.log
+miaomiao-frontend/dist/
+
+# H2 database
+*.mv.db
+*.trace.db
+
+# Logs
+*.log
+
+# ESP32 build artifacts and debug files
+miaomiao-firmware/build*/
+miaomiao-firmware/*.bin
+miaomiao-firmware/*.txt
+miaomiao-firmware/*.ps1
+miaomiao-firmware/*.py
+miaomiao-firmware/*.bat
+miaomiao-firmware/components/
+miaomiao-firmware/managed_components/
+miaomiao-firmware/espressif__esp-sr/
+srmodels_header.bin
+
+# Root-level debug/helper scripts and files
+*.ps1
+*.bat
+*.bin
+esp32_*.txt
+reset_usb_device.py
+
+# Sensitive config (never commit real credentials)
+**/application-local.yml
+**/application-local.yaml
+**/.env
+
+# Internal documentation (README.md is the public-facing doc)
+docs/
+CLAUDE.md
+DEVELOPMENT.md
+
+# Unrelated subprojects
+ai-code-helper/
+openclaw-weixin/
+
+# Artwork assets (large binary files)
+苗苗形象和状态_原图/
+苗苗形象和状态_converted/
+wifi图标/
+
+# Node
+*.tgz
+
+# ESP32 build dependencies
+miaomiao-firmware/deps/
