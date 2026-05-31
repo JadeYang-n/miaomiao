@@ -2,14 +2,14 @@
 
 An AI-powered anti-fraud companion for elderly users, embodied as a talking pet cat on an ESP32 device with a screen, microphone, and speaker.
 
-Miaomiao detects scam conversations in real-time, alerts family members via Feishu/Lark, and uses voice interaction to warn and protect elderly users.
+Miaomiao detects scam conversations in real-time, alerts family members via Feishu, and uses voice interaction to warn and protect elderly users.
 
 ## Features
 
 - Real-time scam detection (health products, fake investments, impersonation, etc.)
 - Voice conversation with AI cat personality
 - ST7789 TFT display with animated cat expressions
-- Automatic alerts to family members via Feishu/Lark
+- Automatic alerts to family members via Feishu
 - User profile system (elderly person + family info)
 - News-backed scam warnings with real case references
 - Smart sleep mode (auto-sleep after inactivity)
@@ -39,7 +39,7 @@ Spring Boot Backend (miaomiao-backend)
   ├── TTS: text-to-speech
   ├── Scam detection engine
   ├── News search (RSS + API)
-  ├── Feishu/Lark bot integration
+  ├── Feishu bot integration
   └── H2 database (chat history + user profiles)
         │
         ▼
@@ -56,7 +56,7 @@ Vue 3 Frontend (miaomiao-frontend)
 - ESP-IDF 5.4+
 - An LLM API endpoint (OpenAI-compatible)
 - A TTS API endpoint (OpenAI-compatible)
-- Feishu/Lark app (optional, for family alerts)
+- Feishu app (optional, for family alerts)
 
 ### Backend
 
