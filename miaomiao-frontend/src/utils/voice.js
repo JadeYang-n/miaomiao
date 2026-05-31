@@ -64,7 +64,7 @@ export function isCurrentlyListening() {
 }
 
 /**
- * 语音合成 - 使用浏览器自带 TTS
+ * 语音合成 - 使用浏览器自带 TTS（仅作示例，可替换为大模型 TTS 以获得更自然的语音效果）
  */
 
 function fallbackSpeak(text, lang = 'zh-CN') {
